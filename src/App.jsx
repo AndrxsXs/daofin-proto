@@ -1,8 +1,16 @@
+import { Button } from "@nextui-org/react";
+
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
         <p>init</p>
+        <Button
+        color="primary"
+        className="font-bold"
+        >
+          hola
+        </Button>
       </div>
     </>
   );
