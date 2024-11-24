@@ -7,6 +7,8 @@ import "./index.css";
 import Hero from "@pages/Hero";
 import Home from "@pages/Home";
 import Login from "@pages/Login";
+import Dashboard from "@pages/Dashboard";
+import DashboardHome from "@pages/dashboard/DashboardHome";
 
 const routes = createBrowserRouter([
   {
@@ -29,12 +31,13 @@ const routes = createBrowserRouter([
   },
   {
     path: "dashboard",
-    element: <div>Dashboard</div>,
+    element: <Dashboard />,
     errorElement: <div>404</div>,
     children: [
       {
         index: true,
-        element: <div>Home del dashboard</div>,
+        path: "home",
+        element: <DashboardHome />,
         errorElement: <div>404</div>,
       },
       {
