@@ -9,6 +9,7 @@ import Home from "@pages/Home";
 import Login from "@pages/Login";
 import Dashboard from "@pages/Dashboard";
 import DashboardHome from "@pages/dashboard/DashboardHome";
+import Incentivize from "@pages/dashboard/Incentivize";
 
 const routes = createBrowserRouter([
   {
@@ -57,7 +58,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "incentivize",
-        element: <div>Incentivar</div>,
+        element: <Incentivize />,
         errorElement: <div>404</div>,
       },
     ],
